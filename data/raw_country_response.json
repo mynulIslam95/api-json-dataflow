@@ -1,0 +1,26 @@
+{
+    "count": 83,
+    "name": "mynul",
+    "country": [
+        {
+            "country_id": "BD",
+            "probability": 0.32105943964443306
+        },
+        {
+            "country_id": "OM",
+            "probability": 0.15070359664313357
+        },
+        {
+            "country_id": "QA",
+            "probability": 0.08968240596081195
+        },
+        {
+            "country_id": "SG",
+            "probability": 0.0833290660154997
+        },
+        {
+            "country_id": "AE",
+            "probability": 0.02316268846421484
+        }
+    ]
+}
