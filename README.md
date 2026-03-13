@@ -1,6 +1,6 @@
 # API JSON Dataflow
 
-A clean and modular Python project that demonstrates how to build a simple data pipeline using JSON configuration, external APIs and structured JSON outputs.
+A modular Python project that demonstrates how to build a simple data pipeline using JSON configuration files, external APIs and structured JSON outputs.
 
 The application reads a user name from a configuration file, queries multiple public APIs and combines the responses into a single processed user profile.
 
@@ -8,11 +8,11 @@ The application reads a user name from a configuration file, queries multiple pu
 
 ## Overview
 
-This project demonstrates a simple end-to-end workflow commonly used in backend systems and data pipelines.
+This project demonstrates a small end-to-end workflow commonly used in backend systems and data pipelines.
 
-Input data is read from a JSON configuration file, external APIs are queried for predictions and the responses are processed and saved as structured JSON files.
+The program reads input data from a JSON configuration file, queries public APIs for predictions and processes the responses into structured output files.
 
-The goal of the project is to practice API communication, JSON handling and clean Python project structure.
+The main goal of this project is to practice API communication, JSON processing and clean Python project structure.
 
 ---
 
@@ -39,7 +39,7 @@ The goal of the project is to practice API communication, JSON handling and clea
 
 ## Project Structure
 
-```id="3d4g8y"
+```
 api-json-dataflow/
 │
 ├── README.md
@@ -64,7 +64,7 @@ api-json-dataflow/
 
 ## Workflow
 
-```id="9q2t0d"
+```
 config/user.json
         ↓
 Read input name
@@ -85,7 +85,7 @@ Save structured JSON output
 
 `config/user.json`
 
-```json id="6n7gfe"
+```json
 {
   "name": "mynul"
 }
@@ -97,7 +97,7 @@ Save structured JSON output
 
 `data/final_profile.json`
 
-```json id="n1x3os"
+```json
 {
   "name": "mynul",
   "predicted_age": 46,
@@ -110,9 +110,9 @@ Save structured JSON output
 
 ## Installation
 
-Clone the repository and install the required dependency.
+Install the required dependency:
 
-```id="7bq5wh"
+```
 pip install requests
 ```
 
@@ -120,23 +120,25 @@ pip install requests
 
 ## Run the Application
 
-```id="1q8y6s"
+```
 python main.py
 ```
 
-The script will generate raw API responses and a final combined profile in the `data` directory.
+The script generates raw API responses and a final combined profile in the `data` directory.
 
 ---
 
 ## Learning Objectives
 
-This project helps practice several core Python engineering concepts:
+This project demonstrates several core Python engineering concepts:
 
-* JSON file reading and writing
-* REST API requests using Python
-* Data extraction from API responses
-* Modular Python project structure
-* Basic data processing pipeline design
+* Reading and writing JSON files
+* Sending REST API requests in Python
+* Extracting and processing API responses
+* Designing a modular Python project structure
+* Building a simple data processing pipeline
+
+---
 
 ## License
 
